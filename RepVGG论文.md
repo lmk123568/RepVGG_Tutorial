@@ -1,6 +1,6 @@
 # RepVGG
 
-<img src="11.png" alt="11" style="zoom: 80%;" />
+<img src="img/11.png" alt="11" style="zoom: 80%;" />
 
 ### 摘要
 
@@ -21,11 +21,11 @@
 - 仅用 3x3 卷积和ReLU
 - 没有自动搜索，复合缩放等繁重设计
 
-<img src="12.png" alt="12" style="zoom: 80%;" />
+<img src="img/12.png" alt="12" style="zoom: 80%;" />
 
 多分支结构利于训练，可以避免梯度爆炸梯度消失，但是不适合推理，本文就是训练阶段用分支结构，推理时候讲训练阶段的参数合并成VGG风格的单路结构
 
-<img src="13.png" alt="13" style="zoom: 80%;" />
+<img src="img/13.png" alt="13" style="zoom: 80%;" />
 
 
 
@@ -50,7 +50,7 @@ DiracNet是一个重参数化模型，不过RepVGG中的结构重参数化有不
 
 3x3卷积是在被CuDNN等计算库优化过的，Winograd卷积是一种加速卷积计算效率的算法，可将3*3的乘法次数（MULs）减少为原来的4/9。可见硬件对3x3卷积有着天然的支持。
 
-<img src="\1.png" alt="1" style="zoom: 80%;" />
+<img src="img/1.png" alt="1" style="zoom: 80%;" />
 
 ### 利用结构重参数化构造RepVGG
 
@@ -61,7 +61,7 @@ DiracNet是一个重参数化模型，不过RepVGG中的结构重参数化有不
 - 推理快：VGG参数多，但是推理速度比efficientnet快很多，后者参数量要比VGG小的多，这说明FLOPs不能唯一决定推理速度
 - 内存高效：多分支占内存，分支越多内存越高
 
-<img src="\2.png" alt="2" style="zoom: 80%;" />
+<img src="img/2.png" alt="2" style="zoom: 80%;" />
 
 - 灵活：多分支结构受约束比如resnet，要求两个分支具有相同shape，否则shortcut没有意义，同时多分支对通道剪枝也不友好
 
@@ -71,13 +71,13 @@ DiracNet是一个重参数化模型，不过RepVGG中的结构重参数化有不
 
 ##### 推理阶段重参数化
 
-<img src="3.png" alt="3" style="zoom: 80%;" />
+<img src="img/3.png" alt="3" style="zoom: 80%;" />
 
 1x1卷积核参数加到3x3卷积核中心部分就行，identity部分取对角线核参数加入3x3卷积核中心部分，如上图所示
 
 ##### 网络规格
 
-<img src="4.png" alt="4" style="zoom: 80%;" />
+<img src="img/4.png" alt="4" style="zoom: 80%;" />
 
 - a、b是缩放系数
 - 第一个stage处理大分辨率，只设计一个3x3卷积而减小参数量
@@ -86,17 +86,17 @@ DiracNet是一个重参数化模型，不过RepVGG中的结构重参数化有不
 - 为了实现下采样，每个stage第一个3x3卷积将stride设置2
 - 不同规模RepVGG如下图所示
 
-<img src="5.png" alt="5" style="zoom: 80%;" />
+<img src="img/5.png" alt="5" style="zoom: 80%;" />
 
 ### 实验结果
 
-<img src="6.png" alt="6" style="zoom: 80%;" />
+<img src="img/6.png" alt="6" style="zoom: 80%;" />
 
-<img src="7.png" alt="7" style="zoom: 80%;" />
+<img src="img/7.png" alt="7" style="zoom: 80%;" />
 
-<img src="8.png" alt="8" style="zoom: 80%;" />
+<img src="img/8.png" alt="8" style="zoom: 80%;" />
 
-<img src="9.png" alt="9" style="zoom: 80%;" />
+<img src="img/9.png" alt="9" style="zoom: 80%;" />
 
-<img src="\10.png" alt="10" style="zoom: 80%;" />
+<img src="img/10.png" alt="10" style="zoom: 80%;" />
 

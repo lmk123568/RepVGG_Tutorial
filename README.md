@@ -1,6 +1,6 @@
 # RepVGG_Tutorial
 
-<img src="15.png" alt="12" style="zoom: 80%;" />
+<img src="img/15.png" alt="12" style="zoom: 80%;" />
 
 论文链接：https://arxiv.org/abs/2101.03697
 

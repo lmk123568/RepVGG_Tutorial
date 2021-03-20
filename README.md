@@ -5,7 +5,6 @@
 Hello, welcome here, this is the RepVGG code explanation, you can choose the following link to choose what you want
 
 ---
-
 论文链接：https://arxiv.org/abs/2101.03697
 
 Github_pytorch：https://github.com/DingXiaoH/RepVGG

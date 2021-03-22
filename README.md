@@ -6,7 +6,7 @@
 
 > 论文链接：https://arxiv.org/abs/2101.03697
 
-Github_pytorch：https://github.com/DingXiaoH/RepVGG
+>>Github_pytorch：https://github.com/DingXiaoH/RepVGG
 
 论文解读：https://github.com/lmk123568/RepVGG_Tutorial/blob/main/RepVGG%E8%AE%BA%E6%96%87.md
 

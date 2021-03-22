@@ -12,5 +12,4 @@ Github_pytorch：https://github.com/DingXiaoH/RepVGG
 
 paddlepaddle代码深入讲解：https://aistudio.baidu.com/aistudio/projectdetail/1664955?shared=1
 
-Pytorch代码深入讲解：以后逐渐补充，paddle框架和torch差不多不妨碍理解
-
+Pytorch代码深入讲解：

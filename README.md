@@ -11,5 +11,3 @@
 > 论文解读：https://github.com/lmk123568/RepVGG_Tutorial/blob/main/RepVGG%E8%AE%BA%E6%96%87.md
 
 > paddlepaddle代码深入讲解：https://aistudio.baidu.com/aistudio/projectdetail/1664955?shared=1
-
-> Pytorch代码深入讲解：

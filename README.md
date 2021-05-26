@@ -6,8 +6,8 @@
 
 > 论文链接：https://arxiv.org/abs/2101.03697
 
-> Github_pytorch：https://github.com/DingXiaoH/RepVGG
+> Official：https://github.com/DingXiaoH/RepVGG
 
 > 论文解读：https://github.com/lmk123568/RepVGG_Tutorial/blob/main/RepVGG%E8%AE%BA%E6%96%87.md
 
-> paddlepaddle代码深入讲解：https://aistudio.baidu.com/aistudio/projectdetail/1664955?shared=1
+> AI Studio项目链接（荐）：https://aistudio.baidu.com/aistudio/projectdetail/1664955?shared=1
